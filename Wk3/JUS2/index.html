@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JUS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="block-logo">
+            <h1 class="logo">
+                <a title="JUS" href="index.html">JUS</a>
+            </h1>
+        </div>
+        <div class="block-menu">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" title="Home" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a href="register.html" title="Register" target="_self">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="banner-background">
+    <section class="container banner-container">
+        <div class="banner">
+            <div class="slide">
+                <figure class="banner-figure">
+                    <img src="images/slide-1.png" alt="What is 'JUS'?!" />
+                </figure>
+                <div class="banner-text">
+                    <h3 class="banner-title">What is 'JUS'?!</h3>
+                    <p class="banner-content">'JUS' stands for "Just Us" <br/> A site dedicated <br/> to collaboration!</p>
+                    <a class="btn btn-ok" href="register.html">Sign up now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <figure class="banner-figure">
+                    <img src="images/slide-2.png" alt="How does 'JUS' work?" />
+                </figure>
+                <div class="banner-text">
+                    <h3 class="banner-title">How does 'JUS' work?</h3>
+                    <p class="banner-content">Have an idea. <br/> Get a friend to join. <br/> Collaborate!</p>
+                    <a class="btn btn-ok" href="register.html">Sign up now</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="banner-controls">
+            <li class="prev">
+                <a href="#" id="prev">Prev</a>
+            </li>
+            <li class="next">
+                <a href="#" id="next">Next</a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<div class="main">
+    <section class="container featured-container">
+        <div class="col-1 txt-center">
+            <img src="images/circle-01.png" alt="">
+            <h4 class="featured">Eureeka!</h4>
+            <p>Got an awesome idea? <br/> Do you need a collaborator?</p>
+        </div>
+        <div class="col-2 txt-center">
+            <img src="images/circle-02.png" alt="">
+            <h4 class="featured">Find a friend.</h4>
+            <p>Ask your friend to join. <br/> Since they're obviously more awesome than you.</p>
+        </div>
+        <div class="col-3 txt-center">
+            <img src="images/circle-03.png" alt="">
+            <h4 class="featured">Collaborate!</h4>
+            <p>Work on your file, and upload. <br/> Then, let your friend fix it! </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="col-12">
+            <h3 class="call-title-big">Existing User Login</h3>
+        </div>
+        <div class="col-8">
+            <figure>
+                <img src="images/user-login.png" alt="User Login">
+            </figure>
+        </div>
+        <div class="col-4">
+          <h2 class="call-title">Enter your username/password</h2>
+          <p class="call-content"><form action="data.php" method="post">
+            <p>
+             <div id="login">
+             <form id="loginForm">
+              <label>Username: </label><input name="signinButton" type="text" id="user" class="masterTooltip" title="Please enter a username" required/>
+              <br>
+              <label>Password: </label><input name="signinButton" type="password" id="pass" class="masterTooltip" title="Please enter a Password" required/>
+              <br>
+              <input name="signinButton" type="button" id="signinButton" value="Sign In" />
+          </form>&nbsp;</p>
+        </div>
+    </section>
+
+    <footer class="container footer txt-center">
+        <p class="no-gutter">
+            Copyright © 2014 <a target="_blank" href="http://www.kowprodmedia.com">KowProd.Media</a>
+        </p>
+    </footer>
+</div>
+
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<!-- plugins -->
+
+
+<!-- main -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
