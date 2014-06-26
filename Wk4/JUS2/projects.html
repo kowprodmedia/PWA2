@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JUS - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="block-logo">
+            <h1 class="logo">
+                <a title="JUS" href="index.html">JUS</a>
+            </h1>
+        </div>
+        <div class="block-menu">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" title="Home" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a href="register.html" title="Register" target="_self">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="banner-background">
+    <section class="container banner-container">
+        <div class="banner">
+            <div class="slide">
+                <figure class="banner-figure">
+                    <img src="images/slide-1.png" alt="What is 'JUS'?!" />
+                </figure>
+                <div class="banner-text">
+                    <h3 class="banner-title">What is 'JUS'?!</h3>
+                    <p class="banner-content">'JUS' stands for "Just Us" <br/> A site dedicated <br/> to collaboration!</p>
+                    <a class="btn btn-ok" href="register.html">Sign up now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <figure class="banner-figure">
+                    <img src="images/slide-2.png" alt="How does 'JUS' work?" />
+                </figure>
+                <div class="banner-text">
+                    <h3 class="banner-title">How does 'JUS' work?</h3>
+                    <p class="banner-content">Have an idea. <br/> Get a friend to join. <br/> Collaborate!</p>
+                    <a class="btn btn-ok" href="register.html">Sign up now</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="banner-controls">
+            <li class="prev">
+                <a href="#" id="prev">Prev</a>
+            </li>
+            <li class="next">
+                <a href="#" id="next">Next</a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<div class="main">
+  <section class="container featured-container">
+        <div class="col-1 txt-center">
+        <br>
+        <br>
+        <br>
+            <img src="images/circle-01.png" alt="">
+            <div class="userid">Welcome User:</div>
+          <div class="logoutbox">
+            <button class="dashboardbtn">Dashboard</button>
+            <br>
+            <input name="logOut" type="button" id="logOut" value="Sign Out" />
+            <!-- The button below was not working properly-->
+            <!--<input name="logOut" type="button" id="logOut" value"Sign Out" />-->
+            </div>
+</div>
+        <div class="col-2 txt-center">
+        <h4 class="featured">Current Projects</h4>
+        <p><a href="#" class="modalClick">Add+</a></p>
+        
+        	<div class="projects" id="sortable">
+        
+        	</div><!-- Closes Project List-->
+        
+        </div>
+        
+        
+<div id="overlay">
+	<div id="modal">
+    	<span class="close">X</span>
+    	<h4 class="header">Add Project</h4>
+        <div id="add">
+            <form id="addForm">
+                <label>Project Name: </label>
+                    <input name="projectName" type="text" id="projectName"/>
+                    <br>
+                <label>Project Description: </label>
+                    <input name="projectDescription" type="text" id="projectDescription"/>
+                    <br>
+                <label>Project Due Date: </label>
+                    <input name="projectDueDate" type="text" id="projectDueDate" class="datepicker" />
+                    <br>
+                <label for="status">Select Status:</label>
+                    <br>
+                <label class="mystatus">
+                <input type="radio" name="status" id="urgent"> <img src="images/status1btn.png" width="69" height="75"></label>
+                <label class="mystatus">
+                <input type="radio" name="status" id="normal"> <img src="images/status2btn.png" width="69" height="75"></label>
+                <label class="mystatus">
+                <input type="radio" name="status" id="delayed"> <img src="images/status3btn.png" width="69" height="75"></label>
+                <label class="mystatus">
+                <input type="radio" name="status" id="complete"> <img src="images/status4btn.png" width="69" height="75"></label>
+                    <br>
+                <input name="addButton" type="button" id="addButton" value="Add" />
+          </form>
+		</div>
+	</div>
+</div>
+</section>
+
+    <!--<section class="container">
+        <div class="col-12">
+            <h3 class="call-title-big">Image Gallery</h3>
+        </div>
+        <div class="col-8">
+            <figure>
+                <img src="images/user-login.png" alt="User Login">
+            </figure>
+        </div>
+        <div class="col-4">
+          <h2 class="call-title">Enter your username/password</h2>
+          <p class="call-content"><form action="data.php" method="post">
+            <p>
+             <div id="login">
+              <label>Username: </label><input name="signinButton" type="text" id="user" placeholder="Enter your username" class="masterTooltip" title="Enter a Username" required />
+              <br>
+              <label>Password: </label><input name="signinButton" type="password" id="pass" placeholder="Enter your password" class="masterTooltip" title="Enter a Password" required />
+              <br>
+              <input name="signinButton" type="button" id="signinButton" placeholder="Please Sign In" class="masterTooltip" title="Sign In" value="Sign In" />
+          </form>&nbsp;</p>
+        </div>
+    </section>-->
+
+    <footer class="container footer txt-center">
+        <p class="no-gutter">
+            Copyright © 2014 <a target="_blank" href="http://www.kowprodmedia.com">KowProd.Media</a>
+        </p>
+    </footer>
+</div>
+
+<!-- jquery -->
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<!-- plugins -->
+
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+
+<!-- main -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
