@@ -649,7 +649,7 @@ $('#addButton').on('click', function(e) {
 			dueDate: projDue,
 			status: status
 		},
-		success: function(respons) {
+		success: function(response) {
 			console.log('Testing for success');
 			
 			if(response.error) {
@@ -789,9 +789,9 @@ var projects = function(){
 			});
 		});// End Delete
 		
-/*===== Get Users =====*/
+/*===== Get Users (couldn't get to function) =====*/
 
-var users = function(){
+/*var users = function(){
 	
 	$.ajax({
 		url: 'xhr/get_user_list.php',
@@ -839,7 +839,7 @@ var users = function(){
 					};
 				}
 			});
-		});// End Delete
+		});// End Get Users*/
 		
 /*===== Datepicker =====*/
 
@@ -859,12 +859,12 @@ $( "#sortable" ).disableSelection();
 projects();
 
 /*========== Update project function: Get Users ==========*/
-
+/*
 			}
 		}
 	})
 }
-projects();
+projects();*/
 
 
 
